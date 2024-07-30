@@ -1,26 +1,27 @@
-//Write a program to find m to the power n. m=3 and n=4 so 3*3*3*3
-package Revision;
-import java.util.Scanner;
-public class Power {
+package functions;
 
-	public static void main(String[] args) {
-	Scanner sc=new Scanner(System.in) ;
-	int n,m,pow;
-	System.out.println("Enter n");
-	n=sc.nextInt();
-	System.out.println("Enter m");
-	m=sc.nextInt();
-	for(int i=1;i<m;i++) {
-		pow=n*i;	
-			System.out.println(pow+" ");
-			
+import java.util.Scanner;
+
+public class Power {
+	
+	public static void powerr(int a, int b) {
+		
+			System.out.println(Math.pow(a, b));
+		
 		
 	}
 	
 	
 	
 	
-	sc.close();
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		powerr(a,b);
+sc.close();
 	}
 
 }
